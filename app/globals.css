@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #3d3d3d; /* Updated background color */
+  --foreground: #e0e0e0; /* Updated foreground text color */
+  --primary: #ff6a00; /* Primary brand color (orange) */
+  --secondary: #262a2c; /* Secondary color for sections */
+  --hover: #cc9966; /* Hover color for buttons */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #3a3a3a;
+    --foreground: #e5e5e5;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects-section {
+  background-color: var(--secondary); /* Matches secondary color */
+  padding: 50px 0;
+}
+
+.project-card {
+  background-color: var(--secondary); /* Matches secondary color */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.5);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: var(--foreground);
+  margin-bottom: 10px;
+}
+
+.project-line {
+  width: 3px;
+  height: 100%;
+  background-color: var(--primary); /* Matches brand color */
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary); /* Matches brand color */
+  color: #ffffff;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.explore-btn:hover {
+  background-color: var(--hover); /* Secondary hover color */
+}
