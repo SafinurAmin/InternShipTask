@@ -14,7 +14,7 @@ const Profile = () => {
           spanning books, posters, and web design.
         </p>
         <a
-          href="#about"
+          href="/About"
           className="mt-6 inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-white hover:text-orange-500 transition duration-300"
         >
           Discover More About Me

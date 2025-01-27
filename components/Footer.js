@@ -6,7 +6,7 @@ const Footer = () => {
         <h2 className="text-orange-500 text-2xl font-bold mb-4">
           Get in Touch With Us
         </h2>
-        <p className="text-3xl font-bold underline underline-offset-4">
+        <p className="text-5xl font-bold underline underline-offset-4">
           info@aaronn.com
         </p>
       </div>
